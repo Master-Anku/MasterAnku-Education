@@ -65,14 +65,23 @@ body {
   display: none;
 }
 
-/* container */
-.container {
-    /* display: flex;
-    flex-direction: row; */
-    /* flex-direction: column; */
-    height: 100vh;
-  }
 
+  
+/* hero start */
+.hero{
+  background-color: #8da6bd;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+.wrapper{
+  margin-left: 5%;
+  padding-top: 5%;
+}
+.wrapper h2{
+  color: white;
+  padding-bottom: 3%;
+}
 
 
 

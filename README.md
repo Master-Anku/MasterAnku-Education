@@ -1,4 +1,4 @@
-# Master-Anku Education
+# The Learning Palace
 
 ## Lanugage 
     * HTML
@@ -48,7 +48,7 @@ phonepyaethetpaing124@gmail.com
 - pannacollege မှ ကျောင်းသားများရဲ့ 
 - လေ့လာသင်ယူမှု့ကို 
 - အဖွဲ့လိုက် လက်တွေ့ လေ့ကျင့်ခန်းလုပ်နေတာဖြစ်သည်။
-- Education Project သည်  ကျောင်းသားများရဲ့ စိတ်ကူး ပုံဖော်မှု့ တစ်ခုဖြစ်သည်။ 
+- The Learning Palace Project သည်  ကျောင်းသားများရဲ့ စိတ်ကူး ပုံဖော်မှု့ တစ်ခုဖြစ်သည်။ 
 
 ### 
- - 2024 & Education
+ - 2024 & The Learning Palace
