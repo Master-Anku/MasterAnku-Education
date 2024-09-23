@@ -11,8 +11,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking to Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Master-Anku Education</title>
+    <title>The Learning Palace</title>
     
 </head>
 <body>
@@ -44,12 +46,64 @@
                 <p>Grammar lessons with exercises and clear explanations, grammar charts, <br> reading and listening tests with transcriptions, writing lessons, instant marking, answer feedback, and much more!</p>
             </section>
         </div>
+   
 
-        <footer class="footer">
-
-            <p>&copy; 2024 The Learning Palace. All rights reserved.</p>
-          </footer>
     </main>
+
+    <!-- Footer section starts here -->
+    <footer>
+        <div class="footer-container">
+            
+            <!-- Information Section: Contains quick links -->
+            <div class="footer-section">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Get in Touch Section: Form for user input -->
+            <div class="footer-section">
+                <h3>Get in Touch</h3>
+                <form id="contactForm">
+                    <!-- Input field for user's name -->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <!-- Input field for user's email -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <!-- Text area for user's message -->
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <!-- Submit button -->
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- Social Media Links Section: Icons for Facebook, Instagram, X, YouTube -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.x.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="footer-section copyright">
+                <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
 
 
 
