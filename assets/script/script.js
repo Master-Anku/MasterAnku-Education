@@ -24,6 +24,17 @@
   /*  Mobile Menubar end */
 
 
+  // login from
+  var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+ window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+// login end
+
   /** Footer Start
  * Saves form data (name, email, message) to local storage.
  * @param {string} name - User's name from the form.

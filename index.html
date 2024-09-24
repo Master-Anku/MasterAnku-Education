@@ -3,14 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Learning Palace</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Linking to Font Awesome for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -31,7 +23,7 @@
             <a href="https://pgipbs.kln.ac.lk/">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
-            <a href="./login.html">Login</a>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
             <button class="mobile-menu-btn">X</button>
         </nav>
         
@@ -40,6 +32,36 @@
     <!-- header end -->
      
     <main>
+
+      <!-- login form -->
+      <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="./assets/images/logo.jpg" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+
         <div class="hero">
             <section class="wrapper">
                 <h2>Take your learning with you!</h2>
@@ -49,34 +71,55 @@
    
 
         <!-- Card Desgin 1 -->
+         <section class="title">
+          <h2>What would you like to learn today? pLEASE tALL me Who</h2>
+         </section>
         <section class="card-container">
-            <h2>What would you like to learn today? pLEASE tALL me Who</h2>
+            
             <article class="card">
               <a class="card-link" href="#">
                 <img class="card-img" src="./assets/images/bhone.jpeg" alt="" />
-                <div class="card-body">
-                  <span class="card-category">သူငယ်ချင်းလိုဘဲဆတ်၍ခေါ်မည်ခိုင်</span></span>
-                  <h2 class="card-title">တက္ကသိုလ်ဘုန်းနိုင်</h2>
-                  <p class="card-description">
-                    ပတ်ဝန်းကျင်ကို မသိချင်၊ မမြင်ချင် မကြားချင်ပါ ခိုင် <br>
-                    ပစ္စုပ္ပာန်မှာလဲ မောင် မပျော်ပါဘူး ခိုင်၊  <br>
-                    အနာဂတ်ဆိုတာကိုတော့ တွေးလိုက်မိတိုင်း ကြောက်လန့်မိတယ် "မိခိုင်" ရေ။
-                  </p>
-                  <div class="card-post-info">
-                    <img
-                      class="card-avatar"
-                      src="./assets/images/bhonenine.jpeg"
-                      alt=""
-                    />
-                    <div>
-                      <div class="card-author"> ⭐⭐⭐⭐⭐</div>
-                      <time datetime="" class="card-date">July, 2024</time>
-                    </div>
-                  </div>
+                <p>What are you</p>
+                </div>
+              </a>
+            </article>
+            <article class="card">
+              <a class="card-link" href="#">
+                <img class="card-img" src="./assets/images/bhone.jpeg" alt="" />
+                <p>What are you</p>
+                </div>
+              </a>
+            </article>
+            <article class="card">
+              <a class="card-link" href="#">
+                <img class="card-img" src="./assets/images/bhone.jpeg" alt="" />
+                <p>What are you</p>
+                </div>
+              </a>
+            </article>
+            <article class="card">
+              <a class="card-link" href="#">
+                <img class="card-img" src="./assets/images/bhone.jpeg" alt="" />
+                <p>What are you</p>
+                </div>
+              </a>
+            </article>
+            <article class="card">
+              <a class="card-link" href="#">
+                <img class="card-img" src="./assets/images/bhone.jpeg" alt="" />
+                <p>What are you</p>
+                </div>
+              </a>
+            </article>
+            <article class="card">
+              <a class="card-link" href="#">
+                <img class="card-img" src="./assets/images/bhone.jpeg" alt="" />
+                <p>What are you</p>
                 </div>
               </a>
             </article>
         </section>
+
 
     </main>
 
@@ -138,7 +181,5 @@
 
 
   <script src="./assets/script/script.js"></script>
-</body>
-</html>
 </body>
 </html>
