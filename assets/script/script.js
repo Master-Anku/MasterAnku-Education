@@ -85,7 +85,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
       saveToLocalStorage(name, email, message);
 
       // Feedback to user on successful submission
-      alert('Message sent successfully! Your data has been saved locally.');
+      alert('Message sent successfully! Your data has been saved locally. Thanks for your comments.');
 
       // Optionally reset the form (this can be commented out if you want to keep the form filled)
       this.reset();
