@@ -22,18 +22,42 @@
   mobileMenuBtn.addEventListener("click", toggleMenu);
   
   /*  Mobile Menubar end */
+  
 
+  $(document).ready(function() {
+    // Get the width of the product card, including margin
+    const cardWidth = $('.product-card').outerWidth(true); // Includes margin
+  
+    // Event listener for the right arrow
+    $('#right-arrow').on('click', function() {
+      // Animate scrolling to the right by one card's width
+      $('#product-feed').animate({
+        scrollLeft: $('#product-feed').scrollLeft() + cardWidth
+      }, 500); // 500ms for smooth scroll
+    });
+  
+    // Event listener for the left arrow
+    $('#left-arrow').on('click', function() {
+      // Animate scrolling to the left by one card's width
+      $('#product-feed').animate({
+        scrollLeft: $('#product-feed').scrollLeft() - cardWidth
+      }, 500); // 500ms for smooth scroll
+    });
+  
+    // Scroll snapping ensures cards align perfectly when scrolled
+    $('#product-feed').on('scroll', function() {
+      let currentScroll = $(this).scrollLeft();
+      let remainder = currentScroll % cardWidth;
+      // Snap to the nearest card position
+      if (remainder !== 0) {
+        $(this).animate({
+          scrollLeft: currentScroll - remainder + (remainder > cardWidth / 2 ? cardWidth : 0)
+        }, 300); // Snap animation
+      }
+    });
+  });
+  
 
-  // login from
-  var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
- window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-// login end
 
   /** Footer Start
  * Saves form data (name, email, message) to local storage.
@@ -85,7 +109,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
       saveToLocalStorage(name, email, message);
 
       // Feedback to user on successful submission
-      alert('Message sent successfully! Your data has been saved locally. Thanks for your comments.');
+      alert('Message sent successfully! Your data has been saved locally.');
 
       // Optionally reset the form (this can be commented out if you want to keep the form filled)
       this.reset();
