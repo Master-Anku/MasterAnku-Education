@@ -19,21 +19,58 @@
 </head>
 <body>
     <!-- header start -->
-    <header class="header">
-        <div class="logo">The Learning Palace</div>
+    <header >
+        <div class="logo">
+            <img src="./assets/images/logo.jpg" alt="Test-English Logo">
+            <h1>The Learning Palace</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
         <!-- Mobile Menu  -->
         <div class="menu-toggle" onclick="toggleMenu()">
             <div></div>
             <div></div>
             <div></div>
         </div>
-        <nav class="menu mobile-menu" id="mobileMenu">
-            <a href="https://pgipbs.kln.ac.lk/">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-            <a href="./login.html">Login</a>
-            <button class="mobile-menu-btn">X</button>
-        </nav>
+        
+ <!-- Button to open the modal login form -->
+<button onclick="document.getElementById('login_id').style.display='block'">Login</button>
+
+<!-- The Modal -->
+<div id="login_id" class="modal">
+  <span onclick="document.getElementById('id13').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content " action="action_page">
+    <div class="imgcontainer">
+      <img src="./assets/images/logo.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Username" name="uname" required>
+
+      <label for="gmail"><b>Gmail</b></label>
+      <input type="gmail" placeholder="Gmail" name="gmail" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      
+    </div>
+
+  </form>
+</div>
+       
+
         
     </header>
 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../learn apartment/style.css">
+</head>
+<body>
+    <div class="cards">
+        <div class="card">
+          <h2>Books</h2>
+          <p class="text-body">Here are the details of the card</p>
+        <button class="card-button" onclick="showMoreInfo('Books')">More info</button>
+        </div>
+
+        <div class="card">
+            <h2>Learning Video</h2>
+            <p class="text-body" >Here are the details of the card</p>
+          <button class="card-button" onclick="showMoreInfo('Learning Videos')">More info</button>
+        </div>
+
+        <div class="card">
+            <h2>Lessons</h2>
+            <p class="text-body">Here are the details of the card</p>
+          <button class="card-button" onclick="showMoreInfo('Lessons')">More info</button>
+        </div>
+
+          <div class="card">
+            <h2>Quizzes</h2>
+            <p class="text-body">Here are the details of the card</p>
+          <button class="card-button" onclick="showMoreInfo('Quizzes')">More info</button>
+        </div>
+            
+          <div class="card">
+            <h2>Images</h2>
+            <p class="text-body">Here are the details of the card</p>
+          <button class="card-button" onclick="showMoreInfo('Images')">More info</button>
+        </div>
+
+          <!-- Modal for More Info -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title">More Information</h2>
+            <p id="modal-content">Details will appear here...</p>
+        </div>
+
+      </div>
+    <script src="learn.js"></script>
+</body>
+</html>

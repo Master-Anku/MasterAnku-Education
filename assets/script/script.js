@@ -85,3 +85,21 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 window.addEventListener('load', loadFromLocalStorage);
 
 //* Footer End //
+
+// Get the login button element
+const loginButton = document.getElementById('loginBtn');
+
+// Get the login button and modal elements
+const login_Button = document.getElementById('loginBtn');
+const loginModal = document.getElementById('loginModal');
+const closeModal = document.querySelector('.close');
+
+
+// Get the modal
+var modal = document.getElementById('login_id');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  } }
