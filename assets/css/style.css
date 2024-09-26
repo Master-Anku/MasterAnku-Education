@@ -1,26 +1,26 @@
 :root {
   /* Primary Colors (Professional and Trustworthy Tones) */
-  --color-primary: #21afc294;   /* Strong, authoritative blue for headers, CTAs */
-  --color-primary-light: #90CAF9;  /* Lighter blue for hover states or subtle highlights */
-  --color-primary-dark: #a99044;   /* Darker blue for contrast sections or emphasis */
+  --color-primary: #21afc294;   
+  --color-primary-light: #90CAF9;  
+  --color-primary-dark: #a99044;  
 
   /* Accent Colors (Vibrant, Confident, and Focused) */
-  --color-accent: #FF7043;    /* Bold orange for CTA buttons, important links */
-  --color-accent-light: #FFAB91;  /* Lighter orange for hover effects on buttons */
-  --color-accent-dark: #D84315;   /* Deep orange for footers or strong emphasis */
+  --color-accent: #FF7043;    
+  --color-accent-light: #FFAB91;  
+  --color-accent-dark: #D84315;   
   
   /* Neutral Colors (Crisp, Clean, and Accessible) */
-  --color-background-light: #F4F6F9;  /* Light grey for clean, readable backgrounds */
-  --color-background-dark: #5a695bbd;   /* Dark blue-grey for footers or header sections */
-  --color-white: #FFFFFF;             /* Pure white for cards, backgrounds, content areas */
-  --color-grey-light: #E0E0E0;        /* Light grey for dividers and subtle borders */
-  --color-grey-dark: #455A64;         /* Dark grey for text or muted sections */
+  --color-background-light: #F4F6F9;  
+  --color-background-dark: #5a695bbd;   
+  --color-white: #FFFFFF;            
+  --color-grey-light: #E0E0E0;        
+  --color-grey-dark: #455A64;         
   
   /* Text Colors */
-  --text-color-primary: #491e2e;  /* Deep grey for main body text, enhancing readability */
-  --text-color-secondary: #050101;  /* Lighter grey for secondary text, captions */
-  --text-color-accent: #11094c;    /* Orange for highlighted text like links or important notifications */
-  --text-color-light: #FFFFFF;     /* White text on dark backgrounds (e.g., headers, buttons) */
+  --text-color-primary: #491e2e;  
+  --text-color-secondary: #37424e; 
+  --text-color-accent: #11094c;    
+  --text-color-light: #FFFFFF;     
   
   /* Buttons */
   --btn-primary-bg: var(--color-primary);
@@ -28,43 +28,6 @@
   --btn-accent-bg: var(--color-accent);
   --btn-accent-hover: var(--color-accent-light);
   
-  /* Typography (Clear, Structured for Readability) */
-  --font-size-xxl: 2.8rem;  /* Extra large for hero titles (e.g., "Prepare for IELTS") */
-  --font-size-xl: 2rem;     /* Large for section headers (e.g., "Test Format") */
-  --font-size-lg: 1.25rem;  /* Larger for headings and important labels */
-  --font-size-md: 1rem;     /* Default body text size for readability */
-  --font-size-sm: 0.875rem; /* Smaller text for captions, footnotes, or less important info */
-  --line-height-normal: 1.6; /* Default line height for easy reading */
-  
-  /* Spacing (Clear and Consistent for Structure) */
-  --spacing-xs: 8px;     /* Extra small spacing for tight elements */
-  --spacing-sm: 16px;    /* Small spacing for sections, padding */
-  --spacing-md: 24px;    /* Medium spacing for container padding, between sections */
-  --spacing-lg: 32px;    /* Large spacing for separating larger sections */
-  --spacing-xl: 48px;    /* Extra large spacing for distinct content sections */
-  
-  /* Shadows (Professional, Non-Intrusive Depth) */
-  --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Soft shadow for buttons, cards */
-  --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2); /* Medium shadow for hover states */
-  
-  /* Borders & Rounding (Crisp but Soft for Modern Design) */
-  --border-radius-small: 4px;  /* Slight rounding for inputs, buttons */
-  --border-radius-medium: 6px; /* Medium rounding for cards, containers */
-  --border-radius-large: 12px; /* Larger rounding for prominent elements (e.g., hero section) */
-  
-  /* Transitions (Smooth for Usability and Engagement) */
-  --transition-fast: 0.2s ease-in-out;  /* Quick for hover effects on buttons, links */
-  --transition-medium: 0.4s ease-in-out;  /* Smoother for modal pop-ups or content changes */
-  
-  /* Special Effects */
-  --effect-glow: 0 0 15px rgba(30, 136, 229, 0.5);  /* Glow effect on important buttons/CTAs */
-  --effect-blur: blur(6px);  /* Background blur for modal windows or overlays */
-  
-  /* Responsive Breakpoints (for Multi-device Accessibility) */
-  --breakpoint-xs: 480px;   /* Mobile */
-  --breakpoint-sm: 768px;   /* Tablet */
-  --breakpoint-md: 1024px;  /* Small Desktop */
-  --breakpoint-lg: 1200px;  /* Large Desktop */
 }
 
 
@@ -80,7 +43,7 @@ body {
   font-family: Arial, sans-serif;
   overflow-x: hidden;
   font-family: 'Arial', sans-serif;
-  background-color: var(--color-background-dark); /* Soft background color */
+  background-color: var(--color-background-light);
   display: inline;
   justify-content: center;
   align-items: center;
@@ -89,7 +52,7 @@ body {
 
 .header {
   width: 100%;
-  background-color: var(blue);
+  background-color: var(--color-primary);
   color: var(--text-color-accent);
   padding: 10px 20px;
   display: flex;
@@ -120,7 +83,7 @@ body {
 .header .menu-toggle div {
   width: 25px;
   height: 3px;
-  background-color: var(--bg-color-primary);
+  background-color: var(--color-accent);
   margin: 5px 0;
 }
 
@@ -139,7 +102,7 @@ body {
   
 /* hero start */
 .hero{
-  background-color: var(--bg-color-primary);
+  background-color: var(--color-grey-light);
   background-position: center;
   background-size: cover;
   height: 50vh;
@@ -229,15 +192,15 @@ body {
 
 /* Hover effect for the card */
 .card:hover {
-  transform: translateY(-10px); /* Moves card up slightly */
-  box-shadow: var(--shadow-medium); /* Deepens the shadow for a lifted effect */
+  transform: translateY(-10px); 
+  box-shadow: var(--shadow-medium); 
 }
 
 /* Styling for the card image */
 .card-image img {
-  width: 100%; /* Image takes full width of the card */
-  height: 200px; /* Fixed height for the image */
-  object-fit: cover; /* Ensures the image covers the space without distortion */
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
 }
 
 /* Card content area */
@@ -420,7 +383,7 @@ body {
 
 /* Footer styling */
 footer {
-  background-color: var(--bg-color-primary);
+  background-color: var(--text-color-secondary);
   color: var(--color-primary);
   padding: 40px 0;
   text-align: center;
