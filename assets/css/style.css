@@ -105,8 +105,10 @@ body {
 .hero{
   background-color: var(--color-grey-light);
   background-position: center;
+  background-image: url(../images/English-bg.webp);  
   background-size: cover;
-  height: 50vh;
+  height: 80vh;
+  color: var(--text-color-primary);
 }
 .wrapper{
   margin-left: 5%;
