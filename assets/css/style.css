@@ -4,6 +4,7 @@
   --color-primary-light: #90CAF9;  
   --color-primary-dark: #a99044;  
   --dolor-color: #e8f242;
+  --mobile-color:rgb(8, 7, 7);
 
   /* Accent Colors (Vibrant, Confident, and Focused) */
   --color-accent: #FF7043;    
@@ -28,6 +29,7 @@
   --btn-primary-hover: var(--color-primary-light);
   --btn-accent-bg: var(--color-accent);
   --btn-accent-hover: var(--color-accent-light);
+  --btn-color:green;
   
 }
 
@@ -59,6 +61,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 15px 20px;
+  /* background-image: url(../images/English-bg.webp); */
 }
 
 .header .logo {
@@ -71,8 +75,11 @@ body {
 }
 
 .header .menu a {
-  color: var(--text-color-secondary);
+  color: var(--color-background-light);
   text-decoration: none;
+  &:hover{
+    border-bottom: 3px solid red;
+  }
 }
 
 
@@ -84,12 +91,12 @@ body {
 .header .menu-toggle div {
   width: 25px;
   height: 3px;
-  background-color: var(--color-accent);
+  background-color: var(--mobile-color);
   margin: 5px 0;
 }
 
 .mobile-menu a {
-  color: var(--text-color-secondary);
+  color: var(--color-background-light);
   text-decoration: none;
   display: block;
   padding: 10px;
@@ -143,11 +150,12 @@ body {
       position: fixed;
       right: 0;
       top: 5%;
-      background-color: var(--bg-color-primary);
+      background-color: var(--mobile-color);
+      color: var(--color-background-light);
       z-index: 999;
       height: 100vh;
       width: auto;
-      padding: 20px;
+      /* padding: 20px; */
       transform: translateX(130px);
       transition: transform 500ms ease;
     }
@@ -168,9 +176,6 @@ body {
       border: none;
   }
 }
-
-
-
 
 
 /* Container that holds all the cards */
@@ -240,7 +245,7 @@ body {
 
 /* Button hover effect */
 .card-btn:hover {
-  background-color: var(--btn-primary-bg-hover); /* Darker blue on hover */
+  background-color: var(--btn-color);
 }
 
 /* Responsive adjustments for smaller screens */
@@ -366,7 +371,7 @@ body {
 /* Responsive adjustments for tablet-sized screens */
 @media (max-width: 768px) {
   .product-feed {
-    gap: 12px; /* Adjust gap on smaller screens */
+    gap: 12px; 
   }
   .product-card {
     width: 260px; /* Decrease card width on smaller screens */
@@ -377,6 +382,9 @@ body {
 @media (max-width: 480px) {
   .product-feed {
     gap: 8px; /* Further decrease gap on mobile */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .product-card {
     width: 200px; /* Further decrease card width on mobile */
@@ -471,7 +479,7 @@ h2 {
 /* Footer styling */
 footer {
   background-color: var(--text-color-secondary);
-  color: var(--color-primary);
+  color: var(--color-background-light);
   padding: 40px 0;
   text-align: center;
 }
@@ -508,13 +516,14 @@ footer {
 }
 
 .footer-section ul li a {
-  color: var(--text-color-white);
+  color: var(--text-color-light);
   text-decoration: none;
+ 
 }
 
 /* Hover effect for links */
 .footer-section ul li a:hover {
-  color: var(--text-color-white);
+  color: var(--btn-color);
 }
 
 /* Styling for the contact form */
@@ -544,17 +553,17 @@ footer {
 /* Submit button styling */
 .footer-section form button {
   padding: 10px;
-  background-color: var(--bg-color-primary);
+  background-color: var(--color-primary);
   border: none;
   border-radius: 5px;
-  color: var(--text-color-white);
+  color: var(--color-background-light);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 /* Hover effect for the submit button */
 .footer-section form button:hover {
-  background-color: var(--btn-primary-bg-hover);
+  background-color: var(--btn-color);
 }
 
 /* Styling for social media icons */
@@ -572,7 +581,7 @@ footer {
 
 /* Hover effect for social media icons */
 .social-icons a:hover {
-  color: var(--text-color-white);
+  color: var(--btn-color);
 }
 
 /* Styling for the copyright section */
