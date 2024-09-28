@@ -120,3 +120,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 window.addEventListener('load', loadFromLocalStorage);
 
 //* Footer End //
+
+
+

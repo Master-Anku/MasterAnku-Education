@@ -112,10 +112,11 @@ body {
 .hero{
   background-color: var(--color-grey-light);
   background-position: center;
-  background-image: url(../images/English-bg.webp);  
+  /* background-image: url(../images/hero.jpg);   */
   background-size: cover;
-  height: 80vh;
+  height: 70vh;
   color: var(--text-color-primary);
+  /* position: relative; */
 }
 .wrapper{
   margin-left: 5%;
@@ -125,6 +126,27 @@ body {
   color: var(--text-color-secondary);
   padding-bottom: 3%;
 }
+/* 
+.touch{
+  position: absolute;
+  right: 12%;
+  border: 3px solid blue;
+  margin: 10px 7px;
+}
+.touch label, input{
+  padding: 10px 7px;
+  margin: 10px;
+  border-radius: 7px;
+}
+.touch-btn{
+  padding: 7px 20px;
+    margin: 7px 10px;
+    &:hover{
+      background-color: #fff;
+      color: green;
+    }
+} */
+
 
 
 
@@ -441,7 +463,7 @@ h2 {
 /* Embed container: Ensures iframe (video) is responsive */
 .video-embed {
   position: relative;
-  padding-bottom: 56.25%; /* Aspect ratio 16:9 for the YouTube videos */
+  padding-bottom: 56.25%; 
   height: 0;
   overflow: hidden;
 }
@@ -599,4 +621,3 @@ footer {
       align-items: center;
   }
 }
-  
