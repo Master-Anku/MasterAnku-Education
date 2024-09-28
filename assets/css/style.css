@@ -1,3 +1,4 @@
+/* global  */
 :root {
   /* Primary Colors (Professional and Trustworthy Tones) */
   --color-primary: #21afc294;   
@@ -33,26 +34,21 @@
   
 }
 
-
-
+/* UN  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  /* General styles */
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  overflow-x: hidden;
   font-family: 'Arial', sans-serif;
   background-color: var(--color-background-light);
-  display: inline;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
 }
 
+/* header start */
 .header {
   width: 100%;
   background-color: var(--color-primary);
@@ -106,13 +102,13 @@ body {
   display: none;
 }
 
-
+/* header end */
   
 /* hero start */
 .hero{
   background-color: var(--color-grey-light);
   background-position: center;
-  /* background-image: url(../images/hero.jpg);   */
+  background-image: url(../images/Children-reading-books.jpg);  
   background-size: cover;
   height: 70vh;
   color: var(--text-color-primary);
@@ -147,10 +143,7 @@ body {
     }
 } */
 
-
-
-
-/* Mobile */
+/* for header Mobile  start */
 @media (min-width: 596px) {
     .header .menu {
       display: flex;
@@ -198,13 +191,13 @@ body {
       border: none;
   }
 }
-
+/* for header Mobile end */
 
 /* Container that holds all the cards */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
-  gap: 16px; /* Spacing between cards */
+  gap: 16px; 
   padding: 30px;
   /* max-width: 1200px; Max width of the card grid */
   width: 100%; /* Full width */
@@ -213,11 +206,11 @@ body {
 
 /* Individual card styling */
 .card {
-  background-color: var(--color-primary); /* White background for the card */
-  border-radius: 10px; /* Slightly rounded corners */
-  box-shadow: var(--shadow-heavy); /* Subtle box shadow */
-  overflow: hidden; /* Ensures no content overflows the card */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transitions */
+  background-color: var(--color-primary);
+  border-radius: 10px; 
+  box-shadow: var(--shadow-heavy);
+  overflow: hidden; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 /* Hover effect for the card */
@@ -226,7 +219,6 @@ body {
   box-shadow: var(--shadow-medium); 
 }
 
-/* Styling for the card image */
 .card-image img {
   width: 100%; 
   height: 200px; 
@@ -235,7 +227,7 @@ body {
 
 /* Card content area */
 .card-content {
-  padding: 20px; /* Padding inside the card for content */
+  padding: 20px; 
 }
 
 /* Card title styling */
@@ -249,44 +241,47 @@ body {
 /* Description styling */
 .card-description {
   font-size: var(--font-size-sm);
-  color: var(--text-color-accent); /* Soft gray for the description */
-  margin-bottom: 20px; /* Space below the description */
-  line-height: 1.6; /* Improves readability */
+  color: var(--text-color-accent); 
+  margin-bottom: 20px; 
+  line-height: 1.6; 
 }
 
-/* Button styling */
+/* Card Button styling */
 .card-btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--color-grey-light); /* Blue button */
-  color: var(--text-color-secondary); /* White text */
-  text-decoration: none; /* Remove link underline */
-  border-radius: 5px; /* Rounded corners for the button */
-  transition: background-color 0.3s ease; /* Smooth hover effect for the button */
+  background-color: var(--color-grey-light); 
+  color: var(--text-color-secondary);
+  text-decoration: none; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease;
+  &:hover{
+    background-color: var(--btn-color);
+  } 
 }
 
 /* Button hover effect */
-.card-btn:hover {
+/* .card-btn:hover {
   background-color: var(--btn-color);
-}
+} */
 
-/* Responsive adjustments for smaller screens */
+/* Responsive adjustments for smaller screens  Card Desgin */
 @media (max-width: 768px) {
   .card-title {
-      font-size: 1.2rem; /* Slightly smaller title for mobile */
+      font-size: 1.2rem; 
   }
 
   .card-description {
-      font-size: 0.9rem; /* Slightly smaller description */
+      font-size: 0.9rem; 
   }
 
   .card-image img {
-      height: 150px; /* Smaller image height for smaller screens */
+      height: 150px; 
   }
 }
 
 
-*/ Container for the product carousel
+/* Container for the product carousel Card Degin 2 */
 .product-carousel {
   position: relative;
   display: flex;
@@ -299,11 +294,11 @@ body {
 /* Product feed layout */
 .product-feed {
   display: flex;
-  justify-content: flex-start; /* Align cards to the start */
-  gap: 16px; /* Space between cards */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  scroll-snap-type: x mandatory; /* Snap effect */
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  justify-content: flex-start; 
+  gap: 16px; 
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory; 
+  scrollbar-width: none; 
   padding: 10px;
 }
 
@@ -319,34 +314,34 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   padding: 20px;
   text-align: center;
-  scroll-snap-align: start; /* Ensure snapping to card */
+  scroll-snap-align: start; 
   transition: transform 0.3s ease;
   width: 300px; /* Card width */
   height: 380px; /* Card height */
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Space out content */
+  justify-content: space-between; 
 }
 
 /* Image styling within the product card */
 .product-card img {
   max-width: 100%;
   max-height: 200px; /* Limit image height */
-  object-fit: cover; /* Maintain aspect ratio */
+  object-fit: cover; 
   border-radius: 8px;
   margin-bottom: 16px; /* Space below image */
 }
 
 /* Styling for product name */
 .product-card h3 {
-  font-size: 20px; /* Font size for product title */
-  color: var(--text-color-secondary); /* Color for title */
-  margin-bottom: 10px; /* Space below title */
+  font-size: 20px; 
+  color: var(--text-color-secondary); 
+  margin-bottom: 10px; 
 }
 
 /* Styling for product price */
 .product-card p {
-  font-size: 18px; /* Font size for price */
+  font-size: 18px; 
   color: var(--dolor-color); /* dolor Color for price */
 }
 
@@ -416,12 +411,12 @@ body {
 
 /* Podcast Button Styles */
 .podcast-btn {
-  background-color: #073572; /* Primary button color */
-  color: #fffffff1; /* Text color */
-  padding: 12px 25px; /* Button padding */
-  font-size: .7rem; /* Font size */
-  font-weight: bold; /* Bold text */
-  border-radius: 50px; /* Rounded button shape */
+  background-color: #073572; 
+  color: #fffffff1; 
+  padding: 12px 25px; 
+  font-size: .7rem; 
+  font-weight: bold; 
+  border-radius: 50px; 
   border: none; /* No border */
   cursor: pointer; /* Pointer cursor */
   text-transform: uppercase; /* Uppercase text */
@@ -431,8 +426,8 @@ body {
 }
 
 .podcast-btn:hover {
-  background-color: #09677f; /* Darker shade on hover */
-  box-shadow: 0 6px 16px rgba(0, 129, 234, 0.6); /* Enhanced shadow on hover */
+  background-color: #09677f; 
+  box-shadow: 0 6px 16px rgba(0, 129, 234, 0.6); 
 }
 
 
@@ -441,9 +436,9 @@ body {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
+/* section card desgin end */
 
-
-/* Video contents
+/* Video contents start*/
 
 /* Body styling: Center the content vertically and horizontally */
 video {
@@ -525,10 +520,10 @@ h2 {
   color: #777;
   font-size: 14px;
 }
+/* video section end */
 
 
-
-/* Footer styling */
+/* Footer start */
 footer {
   background-color: var(--text-color-secondary);
   color: var(--color-background-light);
@@ -651,3 +646,4 @@ footer {
       align-items: center;
   }
 }
+/* footer end */
