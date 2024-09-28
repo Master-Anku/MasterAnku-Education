@@ -304,7 +304,7 @@ body {
   overflow-x: auto; /* Enable horizontal scrolling */
   scroll-snap-type: x mandatory; /* Snap effect */
   scrollbar-width: none; /* Hide scrollbar for Firefox */
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Hide scrollbar for Chrome, Safari, and Opera */
@@ -381,7 +381,7 @@ body {
 
 /* General Styles for the Product Card */
 .product-card {
-  background-color: #d1cb4f;
+  background-color: #ccccc5;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -417,9 +417,9 @@ body {
 /* Podcast Button Styles */
 .podcast-btn {
   background-color: #073572; /* Primary button color */
-  color: #fff; /* Text color */
+  color: #fffffff1; /* Text color */
   padding: 12px 25px; /* Button padding */
-  font-size: 1rem; /* Font size */
+  font-size: .7rem; /* Font size */
   font-weight: bold; /* Bold text */
   border-radius: 50px; /* Rounded button shape */
   border: none; /* No border */
