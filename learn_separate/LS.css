@@ -5,7 +5,7 @@ h1 {
 
 .cards {
     display: flex;
-    flex-direction: row;
+    /* flex-direction:  */
     gap: 15px;
   }
   
@@ -24,7 +24,25 @@ h1 {
   .cards .purple {
     background-color: aquamarine;
   }
+
+  .cards .brown {
+    background-color: rgb(222, 145, 44);
+  }
+
+  .cards .dark {
+    background-color: rgb(139, 194, 50);
+  }
+
+  .cards .pink {
+    background-color: rgb(214, 111, 147);
+  }
+
+  .cards .yellow {
+    background-color: rgb(237, 231, 37);
+  }
+
   
+
   .cards .card {
     display: flex;
     align-items: center;
