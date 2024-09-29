@@ -32,6 +32,9 @@
   --btn-accent-hover: var(--color-accent-light);
   --btn-color:green;
   
+
+  /* Text size */
+  --header-font-size: 1.5rem;
 }
 
 /* UN  */
@@ -193,6 +196,10 @@ body {
 }
 /* for header Mobile end */
 
+.title1{
+  padding-top: 5%;
+  font-size: 28px;
+}
 /* Container that holds all the cards */
 .card-container {
   display: grid;
@@ -232,7 +239,7 @@ body {
 
 /* Card title styling */
 .card-title {
-  font-size: var(--font-size-lg);
+  font-size: var(--header-font-size);
   color: var(--text-color-main); /* Dark color for contrast */
   margin-bottom: 10px; /* Space below the title */
   font-weight: bold; /* Bold for emphasis */
@@ -618,6 +625,18 @@ footer {
   margin-top: 20px;
 }
 
+.fa-facebook-f{
+  color: white;
+}
+.fa-instagram{
+  color: red;
+}
+.fa-twitter{
+  color: rgb(6, 245, 181);
+}
+.fa-youtube{
+  color: red;
+}
 .social-icons a {
   text-decoration: none;
   color: var(--color-primary);
