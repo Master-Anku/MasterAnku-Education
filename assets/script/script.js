@@ -23,6 +23,24 @@
   
   /*  Mobile Menubar end */
   
+  // Get the login button element
+const loginButton = document.getElementById('loginBtn');
+
+// Get the login button and modal elements
+const login_Button = document.getElementById('loginBtn');
+const loginModal = document.getElementById('loginModal');
+const closeModal = document.querySelector('.close');
+
+
+// Get the modal
+var modal = document.getElementById('login_id');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  } }
+
 // == 
   // $(document).ready(function() {
   //   // Get the width of the product card, including margin
