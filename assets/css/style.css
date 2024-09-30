@@ -595,7 +595,7 @@ footer {
 
 /* Input and textarea styling */
 .footer-section form input,
-.footer-section form textarea {
+.footer-section form textarea{
   padding: 10px;
   margin-bottom: 15px;
   border: none;
@@ -658,6 +658,10 @@ footer {
   color: var(--text-color-white);
 }
 
+#contactForm input, #contactForm textarea {
+  border: none;
+  outline: none;
+}
 /* Responsive design: Ensures the layout adapts on smaller screens */
 @media (max-width: 768px) {
   .footer-container {
@@ -683,6 +687,10 @@ footer {
   width: 20%;
   background-color: #ffffff;
   box-shadow: 0px 0px 7px #ffffff;
+}
+#search-input:focus {
+  outline: none;  /* Removes the border on focus */
+  border: none;   /* You can also hide any default border */
 }
 
 .search-btn{

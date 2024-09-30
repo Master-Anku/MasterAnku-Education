@@ -139,6 +139,7 @@ document.getElementById('search-form').addEventListener('submit', function(e) {
           section.style.display = 'none';
       }
   });
+  document.getElementById('search-input').value = '';
 });
 
 function highlightText(text, term) {
