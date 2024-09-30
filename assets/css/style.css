@@ -666,3 +666,31 @@ footer {
   }
 }
 /* footer end */
+
+/* search bar */
+.search {
+  text-align: center;
+  /* width: 50%; */
+  margin-top: 2%;
+  /* display: inline-block; */
+  background-color: #11094c;
+}
+#search-input{
+  padding: 7px 20px;
+  margin: 14px 20px;
+  border: none;
+  border-radius: 20px;
+  width: 20%;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 7px #ffffff;
+}
+
+.search-btn{
+  padding: 7px 10px;
+  margin: 14px 10px;
+  border-radius: 7px;
+  border: none;
+  &:hover{
+    background-color: yellow;
+  }
+}

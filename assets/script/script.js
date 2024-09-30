@@ -123,3 +123,36 @@ window.addEventListener('load', loadFromLocalStorage);
 
 
 
+
+// search bar
+document.getElementById('search-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const searchTerm = document.getElementById('search-input').value.toLowerCase();
+  const sections = document.querySelectorAll('.card, .product-card, .video-card');
+
+  sections.forEach(section => {
+      const sectionText = section.textContent.toLowerCase();
+      if (sectionText.includes(searchTerm)) {
+          section.style.display = 'block';
+      } else {
+          section.style.display = 'none';
+      }
+  });
+});
+
+function highlightText(text, term) {
+  const regex = new RegExp(`(${term})`, 'gi');  //g for Global search \ i for Case-insensitive စာကို အကြီးအသေးမခွဲဘဲ အကုန်ရှာပေးတာ 
+  return text.replace(regex, '<mark>$1</mark>');
+}
+
+// Update display logic to highlight matching text
+sections.forEach(section => {
+  const sectionText = section.innerHTML;
+  if (sectionText.toLowerCase().includes(searchTerm)) {
+      section.innerHTML = highlightText(sectionText, searchTerm);
+      section.style.display = 'block';
+  } else {
+      section.style.display = 'none';
+  }
+});
