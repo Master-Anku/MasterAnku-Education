@@ -171,20 +171,23 @@ span.psw {
 /* Modal Content/Box */
 .modal-content {
   background-color: #d7caca82;
-  border-radius: 50px;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: 15% auto; 
+  padding: 20px;
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px; 
 }
 
-/* The Close Button (x) */
+/* Close Button (X) */
 .close {
   position: absolute;
   right: 25px;
-  top: 0;
-  color:red;
+  top: 10px;
+  color: #000;
   font-size: 35px;
   font-weight: bold;
+  cursor: pointer; 
 }
 
 .close:hover,
@@ -193,6 +196,60 @@ span.psw {
   cursor: pointer;
 }
 
+/* Form Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Avatar Image */
+.avatar {
+  width: 100px; 
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Container */
+.container {
+  padding: 16px;
+}
+
+/* Center the image container */
+.imgcontainer {
+  text-align: center;
+}
+
+/* Media Queries for smaller screens */
+@media screen and (max-width: 600px) {
+  .modal-content {
+    width: 95%; 
+  }
+}
 /* header end */
   
 /* hero start */

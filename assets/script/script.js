@@ -41,6 +41,36 @@ window.onclick = function(event) {
     modal.style.display = "none";
   } }
 
+document.getElementById("login-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevents the form from submitting in the traditional way
+
+    // Get the values from the form fields
+    var username = document.querySelector('input[name="uname"]').value;
+    var gmail = document.querySelector('input[name="gmail"]').value;
+    var password = document.querySelector('input[name="psw"]').value;
+
+    // Save them to local storage
+    localStorage.setItem("username", username);
+    localStorage.setItem("gmail", gmail);
+    localStorage.setItem("password", password);
+
+    // Display success message
+    document.getElementById("login-message").innerText = "Login successful!";
+
+    // Clear the form after submission
+    document.getElementById("login-form").reset();
+
+    // Hide the modal
+    document.getElementById("login_id").style.display = "none";
+});
+  
+setTimeout(function() {
+  document.getElementById("login-message").innerText = "";
+}, 2000); // Clears the message after 2 seconds
+
+
+
+
 // == 
   // $(document).ready(function() {
   //   // Get the width of the product card, including margin
