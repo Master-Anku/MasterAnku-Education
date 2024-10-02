@@ -41,7 +41,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   } }
 
-document.getElementById("login-form").addEventListener("submit", function(event) {
+document.getElementById("login").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevents the form from submitting in the traditional way
 
     // Get the values from the form fields
