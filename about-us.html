@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #12573e;
+}
+
+.about-us-section {
+    padding: 80px 0;
+    background-color: #b4b6d1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #737f7b;
+}
+
+.about-us-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.about-us-content header h2 {
+    font-size: 2.5rem;
+    color: #106b28;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.about-us-content p {
+    font-size: 1.125rem;
+    color: #1014cb;
+    margin-bottom: 20px;
+}
+
+.about-us-content footer {
+    margin-top: 20px;
+}
+
+.about-us-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-us-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Back to Home Link Styles */
+.back-home-link {
+    display: inline-block;
+    font-size: 1.125rem;
+    color: #92ad1b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.back-home-link:hover {
+    color: #004b99;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .about-us-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+        padding: 30px;
+    }
+
+    .about-us-content header h2 {
+        font-size: 2rem;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <section class="about-us-section">
+        <div class="container">
+            <article class="about-us-content">
+                <header>
+                    <h2>About Us</h2>
+                </header>
+                <p>
+                    Welcome to <strong>Learning Palace</strong>, your trusted partner in learning English for academic, professional, and personal success. 
+                    Our mission is to empower learners around the world to achieve their language goals through personalized, interactive, and engaging courses.
+                </p>
+                <p>
+                    Our expert teachers and content creators are passionate about providing high-quality learning experiences, tailored to meet the diverse needs of English learners at all levels. 
+                    Whether you're preparing for IELTS, improving your business communication, or simply enhancing your fluency, we're here to guide you every step of the way.
+                </p>
+                <p>
+                    We believe in the power of language to open doors to new opportunities. Join us and unlock your potential with comprehensive lessons, innovative tools, and a supportive community of learners.
+                </p>
+                <!-- Back to Home Link -->
+                <footer>
+                    <a href="index.html" class="back-home-link">← Back to Home</a>
+                </footer>
+            </article>
+            <figure class="about-us-image">
+                <img src="./assets/images/English-bg.webp" alt="About Us Image">
+            </figure>
+        </div>
+    </section>
+
+</body>
+</html>
