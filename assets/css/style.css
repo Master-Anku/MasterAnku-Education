@@ -1,6 +1,7 @@
 /* global  */
 :root {
   /* Primary Colors (Professional and Trustworthy Tones) */
+  --header-bg:#582012;
   --color-primary: #21afc294;   
   --color-primary-light: #90CAF9;  
   --color-primary-dark: #a99044;  
@@ -54,7 +55,7 @@ body {
 /* header start */
 .header {
   width: 100%;
-  background-color: var(--color-primary);
+  background-color: var(--header-bg);
   color: var(--text-color-accent);
   padding: 10px 20px;
   display: flex;
@@ -121,11 +122,14 @@ input[type=text], input[type=password], input[type=gmail] {
 
 /* Set a style for all buttons */
 .log-btn {
-  background-color: #04AA6D;
-  color: white;
+  background-color: var(--header-bg);
+ color: var(--color-background-light);
   /* padding: 14px 20px;
   margin: 8px 0;
   border: 50px; */
+  font-size: 1.2rem;
+  border: none;
+  /* border-radius: 50%; */
   cursor: pointer;
 }
 
