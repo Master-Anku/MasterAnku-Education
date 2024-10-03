@@ -55,18 +55,19 @@ document.getElementById("login").addEventListener("submit", function(event) {
     localStorage.setItem("password", password);
 
     // Display success message
-    document.getElementById("login-message").innerText = "Login successful!";
+    document.getElementById("message").innerText = "Login successful!";
+    alert("Login successful!")
 
     // Clear the form after submission
-    document.getElementById("login-form").reset();
+    document.getElementById("login").reset();
 
     // Hide the modal
     document.getElementById("login_id").style.display = "none";
 });
   
-setTimeout(function() {
-  document.getElementById("login-message").innerText = "";
-}, 2000); // Clears the message after 2 seconds
+// setTimeout(function() {
+//   document.getElementById("message").innerText = "";
+// }, 2000); // Clears the message after 2 seconds
 
 
 
