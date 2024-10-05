@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+}
+/* img{
+  width: 300px;
+  border: 2px solid rgb(26, 203, 215);
+} */
+ /* Simple styling for the form and display */
+ form {
+    margin: 20px 0;
+    border: 2px solid white;
+    background-color: #e9ecef;
+    box-shadow: 0px 0px 3px #e1dede;
+    display: inline-block;
+  }
+form label{
+    margin: 10px;
+    width: 80%;
+  }
+
+input{
+  border-radius: 7px;
+  border: none;
+}
+
+h3 {
+  padding: 10px 20px;
+  text-align: center;
+  background-color: rgb(26, 203, 215);
+}
+
+#role {
+  border-radius: 7px;
+}
+#dataDisplay {
+    margin-top: 20px;
+  }
+.entry {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 80%;
+  }
+
+form button {
+    padding: 10px 100px;
+    margin: 14px 20px;
+    background-color: #0dcaf0;
+    border-radius: 7px;
+    border: none;
+    &:hover{
+        color: white;
+        background-color: red;
+    }
+}
+
+.edit,.remove{
+  background-color: #0dcaf0;
+  border: none;
+  border-radius: 7px;
+  padding: 7px 20px;
+  margin: 7px 14px;
+  &:hover{
+    color: white;
+    background-color: red;
+  }
+}
+
+footer h4{
+  font-size: 1rem;
+  text-align: center;
+}
+footer p {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.back-home-link {
+  display: inline-block;
+  font-size: 1.125rem;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}

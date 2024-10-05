@@ -56,6 +56,9 @@ body {
 .header {
   width: 100%;
   background-color: var(--header-bg);
+  /* background-image: url(../images/TLP.webp); */
+  background-position: center;
+  /* position: fixed; */
   color: var(--text-color-accent);
   padding: 10px 20px;
   display: flex;
@@ -840,4 +843,9 @@ footer {
   &:hover{
     background-color: yellow;
   }
+}
+
+/* marque icon color */
+.fa-hands-praying{
+  color: gold;
 }
