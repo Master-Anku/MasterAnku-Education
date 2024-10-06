@@ -292,7 +292,6 @@ input[type="password"] {
     .header .menu-toggle {
       display: none;
     }
-  
 
   }
 
@@ -504,6 +503,8 @@ input[type="password"] {
 @media (max-width: 768px) {
   .product-feed {
     gap: 12px; 
+    flex-direction: column;
+    /* flex-wrap: wrap; */
   }
   .product-card {
     width: 260px; /* Decrease card width on smaller screens */
@@ -850,3 +851,5 @@ footer {
 .fa-hands-praying{
   color: gold;
 }
+
+

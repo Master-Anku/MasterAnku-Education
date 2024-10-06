@@ -7,7 +7,6 @@
     if (window.innerWidth <= 597) {
       menu.classList.toggle("show");
     
-  
     // Check if the 'show' class is active and adjust the width
     if (menu.classList.contains("show")) {
       menu.style.width = "100vw"; // Full width when menu is open
@@ -21,9 +20,10 @@
   let mobileMenuBtn = document.querySelector(".mobile-menu-btn");
   mobileMenuBtn.addEventListener("click", toggleMenu);
   
-  /*  Mobile Menubar end */
+  /* ================= Mobile Menubar end =================== */
   
-  // Get the login button element
+
+  //**  Get the login button element start  **
 const loginButton = document.getElementById('loginBtn');
 
 // Get the login button and modal elements
@@ -65,115 +65,38 @@ document.getElementById("login").addEventListener("submit", function(event) {
     document.getElementById("login_id").style.display = "none";
 });
   
-// setTimeout(function() {
-//   document.getElementById("message").innerText = "";
-// }, 2000); // Clears the message after 2 seconds
+// ============= Login Form end ============================
 
 
+// ** footer start** 
 
-
-// == 
-  // $(document).ready(function() {
-  //   // Get the width of the product card, including margin
-  //   const cardWidth = $('.product-card').outerWidth(true); // Includes margin
-  
-  //   // Event listener for the right arrow
-  //   $('#right-arrow').on('click', function() {
-  //     // Animate scrolling to the right by one card's width
-  //     $('#product-feed').animate({
-  //       scrollLeft: $('#product-feed').scrollLeft() + cardWidth
-  //     }, 500); // 500ms for smooth scroll
-  //   });
-  
-  //   // Event listener for the left arrow
-  //   $('#left-arrow').on('click', function() {
-  //     // Animate scrolling to the left by one card's width
-  //     $('#product-feed').animate({
-  //       scrollLeft: $('#product-feed').scrollLeft() - cardWidth
-  //     }, 500); // 500ms for smooth scroll
-  //   });
-  
-  //   // Scroll snapping ensures cards align perfectly when scrolled
-  //   $('#product-feed').on('scroll', function() {
-  //     let currentScroll = $(this).scrollLeft();
-  //     let remainder = currentScroll % cardWidth;
-  //     // Snap to the nearest card position
-  //     if (remainder !== 0) {
-  //       $(this).animate({
-  //         scrollLeft: currentScroll - remainder + (remainder > cardWidth / 2 ? cardWidth : 0)
-  //       }, 300); // Snap animation
-  //     }
-  //   });
-  // });
-  
-
-
-  /** Footer Start
- * Saves form data (name, email, message) to local storage.
- * @param {string} name - User's name from the form.
- * @param {string} email - User's email from the form.
- * @param {string} message - User's message from the form.
- */
-function saveToLocalStorage(name, email, message) {
-  // Create an object to store form data
-  const formData = {
-      name: name,
-      email: email,
-      message: message
-  };
-  // Store the data in local storage as a JSON string
-  localStorage.setItem('contactFormData', JSON.stringify(formData));
-}
-
-/**
-* Loads saved form data from local storage (if any) and populates the form fields.
-*/
-function loadFromLocalStorage() {
-  // Retrieve the stored data from local storage
-  const storedData = localStorage.getItem('contactFormData');
-  // If data exists, parse it and populate the form fields
-  if (storedData) {
-      const formData = JSON.parse(storedData);
-      document.getElementById('name').value = formData.name;
-      document.getElementById('email').value = formData.email;
-      document.getElementById('message').value = formData.message;
-  }
-}
-
-// Event listener for the form submission
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-  // Prevent the form from submitting normally
-  event.preventDefault();
+document.getElementById('submit').addEventListener('click', function (e) {
+  e.preventDefault(); // Prevent the form from submitting and refreshing the page
 
   // Get form values
-  const name = document.getElementById('name').value.trim();
+  const urname = document.getElementById('name').value.trim();
   const email = document.getElementById('email').value.trim();
   const message = document.getElementById('message').value.trim();
+  var Form = document.getElementById("contactForm");
 
-  // Basic form validation to check if all fields are filled
-  if (name === '' || email === '' || message === '') {
-      alert('Please fill out all fields.');
-  } else {
-      // Save the form data to local storage
-      saveToLocalStorage(name, email, message);
+  // Create a user object to store form data
+  var user = {
+      Name: urname,
+      Email: email,
+      Message: message
+  };
 
-      // Feedback to user on successful submission
-      alert('Message sent successfully! Your data has been saved locally.');
+  // Store the user object in localStorage
+  localStorage.setItem("user", JSON.stringify(user));
 
-      // Optionally reset the form (this can be commented out if you want to keep the form filled)
-      this.reset();
-  }
+  // Reset the form fields
+  Form.reset();
+
 });
+ 
+//======================== Footer End =================//
 
-// Event listener to load the form data from local storage when the page is loaded
-window.addEventListener('load', loadFromLocalStorage);
-
-//* Footer End //
-
-
-
-
-// search bar
+// ** search bar ** ==
 document.getElementById('search-form').addEventListener('submit', function(e) {
   e.preventDefault();
   
@@ -192,7 +115,7 @@ document.getElementById('search-form').addEventListener('submit', function(e) {
 });
 
 function highlightText(text, term) {
-  const regex = new RegExp(`(${term})`, 'gi');  //g for Global search \ i for Case-insensitive စာကို အကြီးအသေးမခွဲဘဲ အကုန်ရှာပေးတာ 
+  const regex = new RegExp(`(${term})`, 'gi');  //g for Global search \ i for Case-insensitive စာကို အကြီးအသေးမခွဲဘဲ အကုန်ရှာပေးတာ  Regular expression
   return text.replace(regex, '<mark>$1</mark>');
 }
 
@@ -206,3 +129,5 @@ sections.forEach(section => {
       section.style.display = 'none';
   }
 });
+
+// ===========Search bar end =============
